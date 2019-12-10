@@ -16,7 +16,7 @@ public class SuiteManager {
 
     }
 
-   // @AfterSuite
+    @AfterSuite
     public void quitDriver(){
 
         driverManager.driver.quit();
