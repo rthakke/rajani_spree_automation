@@ -2,15 +2,12 @@
 
 <suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
 
-    <test name="A_Class">
-        <classes>
-            <class name="A_Class"/>
-        </classes>
-    </test>
 
-    <test name="B_Class">
-        <classes>
-            <class name="B_Class"/>
-        </classes>
-    </test>
+
+    <groups>
+        <run>
+            <include name="smoke" />
+        </run>
+    </groups>
+
 </suite>
