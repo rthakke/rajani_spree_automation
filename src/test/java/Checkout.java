@@ -19,7 +19,7 @@ public class Checkout {
         driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
         driver.findElement(By.id("link-to-login")).click();
         driver.findElement(By.linkText("Create a new account")).click();
-        int i=100;
+
         UUID email_id= UUID.randomUUID();
         driver.findElement(By.id("spree_user_email")).sendKeys("test"+email_id+"@gmail.com");
         driver.findElement(By.id("spree_user_password")).sendKeys("test1gmailcom");
